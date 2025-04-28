@@ -112,6 +112,47 @@ http://localhost:4173
 
 ---
 
+# 🧪 How to Run Cypress Tests
+
+✅ This project uses Cypress for End-to-End (E2E) testing to validate frontend functionality.
+
+Here’s how you can run the Cypress tests manually:
+
+✅ Make sure both services are running first:
+
+- **Frontend** at `http://localhost:4173`
+- **Backend** at `http://localhost:5000`
+
+If you are using Docker Compose:
+
+```bash
+docker-compose up
+```
+
+## Run Cypress Tests
+
+You have two ways to run Cypress tests:
+
+
+### Option A — Open Cypress GUI Test Runner
+
+```bash
+npx cypress open
+```
+- Opens Cypress in interactive mode (GUI).
+- You can manually select which `.cy.ts` tests to run.
+
+
+### Option B — Run Cypress Tests in Headless Mode
+```bash
+npx cypress run
+```
+- Executes all tests automatically in the terminal.
+- Useful for CI/CD pipelines and faster local testing.
+
+---
+
+
 # 🛠️ How to Add a New Editor or Renderer
 
 ✅ Adding a new editor or renderer to the Data Grid is extremely simple — no manual wiring needed.
