@@ -1,0 +1,36 @@
+[
+    {
+      "key": "id",
+      "label": "ID",
+      "rendererType": "default",
+      "editorType": null
+    },
+    {
+      "key": "task",
+      "label": "Task",
+      "rendererType": "default",
+      "editorType": "default"
+    },
+    {
+      "key": "assignees",
+      "label": "Assignees",
+      "rendererType": "user",
+      "type": "user",
+      "editorType": "multiselect"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "rendererType": "numeric",
+      "type": "numeric",
+      "editorType": "numeric"
+    },
+    {
+      "key": "tag",
+      "label": "Tag",
+      "rendererType": "tag",
+      "type": "tag",
+      "editorType": "tag"
+    }
+  ]
+  

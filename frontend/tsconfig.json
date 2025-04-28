@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",              // Modern JS
+    "module": "esnext",               // Use esnext modules for Vite
+    "rootDir": "./src",               // Good
+    "outDir": "./dist",               // Good
+    "esModuleInterop": true,          // Good
+    "strict": true,                   // Good
+    "jsx": "react-jsx",               // 👈 This is missing (for JSX support in React 17+)
+    "resolveJsonModule": true,        // 👈 Needed to import columns.json
+    "allowSyntheticDefaultImports": true, // 👈 Optional, helps Vite
+    "moduleResolution": "node",       // 👈 Important for import paths
+    "skipLibCheck": true,              // 👈 Optional, faster builds, avoids unnecessary errors
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "cypress"
+  ]
+}
