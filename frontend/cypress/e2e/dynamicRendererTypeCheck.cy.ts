@@ -2,7 +2,7 @@ import columns from '../../src/config/columns.json'; // adjust your path!
 
 describe('Renderer Mapping Validation', () => {
   beforeEach(() => {
-    cy.visit('/your-page');
+    cy.visit('http://localhost:4173');
   });
 
   columns.forEach(({ key, rendererType }, index) => {

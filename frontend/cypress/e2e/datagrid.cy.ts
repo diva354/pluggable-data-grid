@@ -1,6 +1,6 @@
 describe('Dynamic Data Grid', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:5173'); // Change if your frontend is on another port
+      cy.visit('http://localhost:4173'); // Change if your frontend is on another port
     });
   
     it('should render the grid with correct headings', () => {
