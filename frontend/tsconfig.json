@@ -7,6 +7,7 @@
     "esModuleInterop": true,          // Good
     "strict": true,                   // Good
     "jsx": "react-jsx",               // 👈 This is missing (for JSX support in React 17+)
+    "types": ["react"],
     "resolveJsonModule": true,        // 👈 Needed to import columns.json
     "allowSyntheticDefaultImports": true, // 👈 Optional, helps Vite
     "moduleResolution": "node",       // 👈 Important for import paths

@@ -2,7 +2,7 @@ import columns from '../../src/config/columns.json'; // adjust your path!
 
 describe('Dynamic Column Type Editor Tests', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:5173'); 
+        cy.visit('http://localhost:4173'); 
       });
   
       columns.forEach(({ key, editorType }, index) => {

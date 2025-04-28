@@ -2,15 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import DataGrid from "./components/DataGrid/DataGrid";
 import { User } from "./components/DataGrid/types"; 
 import { fetchUsers } from "./utils/api";
-/*import MultiSelectEditor from "./components/Editors/MultiSelectEditor";
-import UserRenderer from "./components/Renderers/UserRenderer";
-import NumberEditor from "./components/Editors/NumericEditor";
-import NumberRenderer from "./components/Renderers/NumberRenderer";
-import TagEditor from "./components/Editors/TagEditor";
-import TagRenderer from "./components/Renderers/TagRenderer";*/
 import DefaultRenderer from "./components/Renderers/DefaultRenderer";
 import styles from "./App.module.scss";
-/*import columnConfig from "./config/columns.json";*/
 
 import { CellRendererProps } from "./components/DataGrid/types";
 

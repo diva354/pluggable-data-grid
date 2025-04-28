@@ -7,6 +7,7 @@ services:
     ports:
       - "5000:5000"
     container_name: backend-container
+    entrypoint: ["npm", "run", "start"]
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
       interval: 10s
@@ -26,13 +27,13 @@ services:
     environment:
       - VITE_BACKEND_URL=http://backend:5000  # frontend will connect to backend container
 
-  cypress:
-    build:
-      context: .
-      dockerfile: cypress/Dockerfile.cypress
-    depends_on:
-      frontend:
-        condition: service_started
-    environment:
-      - CYPRESS_baseUrl=http://frontend:4173
-    container_name: cypress-container
+  # cypress:
+  #   build:
+  #     context: .
+  #     dockerfile: cypress/Dockerfile.cypress
+  #   depends_on:
+  #     frontend:
+  #       condition: service_started
+  #   environment:
+  #     - CYPRESS_baseUrl=http://frontend:4173
+  #   container_name: cypress-container

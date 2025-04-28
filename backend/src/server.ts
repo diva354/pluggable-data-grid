@@ -7,6 +7,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.get("/api/users", (req, res) => {
     try {
 
@@ -33,7 +37,7 @@ app.get("/api/users", (req, res) => {
 
 app.use(errorHandler);
 
-const PORT = 3001;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
