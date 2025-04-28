@@ -11,7 +11,14 @@ This project is a dynamic **Interactive Data Grid** application built with:
 ✅ Source maps are enabled for easier frontend debugging in production builds.
 
 ---
+## ✅ Prerequisites
 
+Make sure the following are installed **before proceeding**:
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Git](https://git-scm.com/downloads)
+
+---
 ## 🚀 Setup Instructions
 
 ### 1. Clone the repository
